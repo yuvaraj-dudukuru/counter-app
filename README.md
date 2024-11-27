@@ -27,3 +27,40 @@ mkdir counter-backend
 cd counter-backend
 npm init -y
 npm install express cors body-parser
+
+
+counter-app/
+├── counter-frontend/   # Frontend React application
+├── counter-backend/    # Backend Node.js application
+
+
+
+counter-frontend/
+├── public/                 # Static files served by React
+│   └── index.html          # Main HTML template
+├── src/                    # React source files
+│   ├── components/         # Reusable React components
+│   │   ├── Counter.js      # Component for displaying counter and buttons
+│   │   └── Header.js       # Header component (optional)
+│   ├── services/           # API service calls
+│   │   └── counterApi.js   # Functions to interact with backend APIs
+│   ├── App.css             # Application-level styles
+│   ├── App.js              # Main React app
+│   ├── index.css           # Global CSS
+│   └── index.js            # React entry point
+├── package.json            # Frontend dependencies and scripts
+└── README.md               # Documentation for the frontend
+
+
+
+counter-backend/
+├── src/                  # Source files for backend
+│   ├── routes/           # Route handlers
+│   │   └── counter.js    # Routes for counter APIs
+│   ├── controllers/      # Request handlers
+│   │   └── counterController.js # Logic for handling requests (increment, reset)
+│   ├── index.js          # Entry point of the server
+├── package.json          # Backend dependencies and scripts
+├── README.md             # Documentation for the backend
+└── .env                  # Environment variables (e.g., PORT)
+
